@@ -1,0 +1,24 @@
+# Environment
+.env
+.env.local
+
+# OS
+.DS_Store
+
+# Contracts
+contracts/out/
+contracts/cache/
+contracts/broadcast/
+
+# Go
+backend/tmp/
+backend/vendor/
+
+# Node
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+
+# IDE
+.vscode/
+.idea/
