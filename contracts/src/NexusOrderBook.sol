@@ -38,6 +38,7 @@ contract NexusOrderBook is OrderValidator, ReentrancyGuard, Ownable {
 
     constructor() Ownable(msg.sender) {}
 
+
     function deposit(address token, uint256 amount) external nonReentrant {
         require(amount > 0, "Zero amount");
         IERC20(token).safeTransferFrom(msg.sender, address(this), amount);
